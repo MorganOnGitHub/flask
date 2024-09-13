@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type = "text/javascript"
+        src = "{{ url_for('static', filename = '/hello.js') }}" ></script>
+    <link rel="stylesheet" href="{{url_for('static', filename = '/styles.css')}}">
+</head>
+<body>
+    <input type="button" onClick = "test()" value = "test" />
+    <form action = "/setsession" method="POST">
+        <p><h3> Enter Password</h3></p>
+        <p><input type="text" name="nm" placeholder="Password"/></p>
+        <p><input type ="submit" value="Login" ></p>
+    </form>
+    
+</body>
+</html>
